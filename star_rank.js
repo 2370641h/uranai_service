@@ -18,8 +18,8 @@ const init = async () => {
       starImage.style.position = "absolute";
       starImage.style.top = "0";
       starImage.style.left = "0";
-      starImage.style.width = "100%";  // 元の画像と同じサイズ
-      starImage.style.height = "100%"; // 元の画像と同じサイズ
+      starImage.style.width = "200px";  // 元の画像と同じサイズ
+      starImage.style.height = "auto"; // 元の画像と同じサイズ
       starImage.style.pointerEvents = "none"; // 操作を邪魔しない
       starImage.style.zIndex = "10"; // 元の画像の上に表示
     }
