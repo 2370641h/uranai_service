@@ -1,0 +1,29 @@
+{
+    "name": "Sample Chrome Extension",
+    "description": "uranai change",
+    "version": "0.1",
+    "manifest_version": 3,
+    "content_scripts": [
+      {
+        "matches": ["https://izumi.uranai.jp/unsei/*"],
+        "js": ["izumi_script.js"]
+      },
+      {
+        "matches": ["https://fortune.line.me/horoscope/*"],
+        "js": ["LINE_urani_script.js"]
+      },{
+        "matches":["https://izumi.uranai.jp/unsei/*"],
+        "js":["star_rank.js"],
+        "css":["star.css"]
+      }
+      
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["images/lighting.gif"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+    
+  }
+  

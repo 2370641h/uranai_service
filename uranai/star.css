@@ -1,0 +1,17 @@
+/* 元画像を包むラッパー */
+.star-image-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* エフェクト画像をオーバーレイ */
+  .star-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* 親要素（元画像）と同じサイズにする */
+    height: auto;
+    pointer-events: none; /* ユーザーの操作を邪魔しない */
+    z-index: 10; /* 元画像の上に表示 */
+  }
+  
